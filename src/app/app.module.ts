@@ -7,7 +7,7 @@ import { PlantaModule } from './planta/planta.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

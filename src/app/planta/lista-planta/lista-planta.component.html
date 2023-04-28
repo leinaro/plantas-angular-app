@@ -1,1 +1,38 @@
-<p>lista-planta works!</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1>Vivero El Otoño</h1>
+    </div>
+  </div>
+  <div class="banner">
+    <img
+        src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA"
+        class="img-fluid"
+        alt="..."
+      />
+  </div>
+  <div class="row">
+    <div class="col-9">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre común</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Clima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of plantas">
+            <th scope="row">{{p.id}}</th>
+            <td>{{p.nombre_comun}}</td>
+            <td>{{p.tipo}}</td>
+            <td>{{p.clima}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

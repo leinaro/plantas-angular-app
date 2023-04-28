@@ -11,4 +11,16 @@ export class ListaPlantaComponent {
 
   plantas: Array<Planta> = [];
 
+  constructor(private listaPlantaService: ListaPlantaService) { }
+
+  getPlantas() {
+    this.listaPlantaService.getPlantas().subscribe(plantas => {
+      this.plantas = plantas;
+    });
+  }
+
+  ngOnInit(): void {
+    this.getPlantas();
+  }
+
 }

@@ -18,17 +18,17 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Nombre común</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Clima</th>
+            <th class="table-header" scope="col">Nombre común</th>
+            <th class="table-header" scope="col">Tipo</th>
+            <th class="table-header" scope="col">Clima</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let p of plantas">
             <th scope="row">{{p.id}}</th>
-            <td>{{p.nombre_comun}}</td>
-            <td>{{p.tipo}}</td>
-            <td>{{p.clima}}</td>
+            <td class="table-item-name">{{p.nombre_comun}}</td>
+            <td class="table-item-tipo">{{p.tipo}}</td>
+            <td class="table-item-clima">{{p.clima}}</td>
           </tr>
         </tbody>
       </table>
